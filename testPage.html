@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Тест на знание творчества А.С. Пушкина</title>
+        <link href="./style.css" rel="stylesheet">
+    </head>
+    <body>
+
+       <form action="/textArea.php" method="post">
+        <p><b>Введите текст первого четверостишья стихотворения "Зимнее утро"</b></p>
+        <p><textarea rows="10" cols="50" name="text"></textarea></p>
+        <br/>
+        <button type="submit">Отправить</button>
+        </form>
+
+        <hr/>
+
+       <form action="/selectMult.php" method="post">
+           <p><b>Выберите поэмы, принадлежащие перу А.С. Пушкина</b></p>
+           <p><select size="3" multiple name="poem">
+           <option disabled>Выберите названия поэмы</option>
+           <option value="Кавказский пленник">Кавказский пленник</option>
+           <option selected value="Незнайка на луне">Незнайка на луне</option>
+           <option value="Руслан и Людмила">Руслан и Людмила</option>
+           <option value="Братья разбойники">Братья разбойники</option>
+           </select></p>
+           <br/>
+           <button type="submit">Отправить</button>
+       </form>
+
+       <hr/>
+
+       <form action="/select.php" method="post">
+           <p><b>Выберите поэму, принадлежащую перу А.С. Пушкина</b></p>
+           <p><select name="poem">
+               <option selected disabled>Выберите название поэмы</option>
+               <option value="Кавказский пленник">Кавказский пленник</option>
+               <option value="Незнайка на луне">Незнайка на луне</option>
+               <option value="Кавказская пленница">Кавказская пленница</option>
+               <option value="Бриллиантовая рука">Бриллиантовая рука</option>
+           </select></p>
+           <br/>
+           <button type="submit">Отправить</button>
+       </form>
+
+       <hr/>
+
+       <form action="/checkBox.php" method="post">
+            <p><b>Выберите сказки, принадлежащие перу А.С. Пушкина</b></p>
+            <label>Сказка о золотом петушке
+                <input type="Checkbox" name="Сказка о золотом петушке"/>
+            </label>
+            <br/>
+            <label>Алиса в стране чудес
+                <input type="Checkbox" name="Алиса в стране чудес"/>
+            </label>
+            <br/>
+            <label>Сказка о попе и работнике его Балде
+                <input type="Checkbox" name="Сказка о попе и работнике его Балде"/>
+            </label>
+            <br/>
+            <button type="submit">Отправить</button>
+       </form>
+
+       <hr/>
+
+       <form action="/radioBut.php" method="post">
+           <p><b>Выберите драматическое произведение, принадлежащие перу А.С. Пушкина</b></p>
+           <label>Борис Годунов
+                <input type="radio" value="Борис Годунов" name="myRadio">
+           </label>
+           <br/>
+           <label>Приключения Винни Пуха
+               <input type="radio" value="Приключения Винни Пуха" name="myRadio">
+           </label>
+           <br/>
+           <label>Карлсон, который живет на крыше
+               <input type="radio" value="Карлсон, который живет на крыше" name="myRadio">
+           </label>
+           <br/>
+           <button type="submit">Отправить</button>
+       </form>
+
+       <hr/>
+
+        <p><b>Введите адрес электронной почты и мы отправим Вам результаты</b></p>
+
+        <form action="/adress.php" method="get">
+            <label for="studentEMale">Адрес электронной почты</label>
+            <input type="text" id="studentEMale" name="studentEMale"/>
+            <br/>
+            <button type="submit">Отправить</button>
+        </form>
+
+        <hr/>
+
+        <a href="./index.html">На главную</a>
+
+    </body>
+</html>
